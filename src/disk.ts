@@ -1,5 +1,5 @@
-import { getPreferenceValues } from "@raycast/api";
 import { statfs } from "node:fs/promises";
+import { getPreferenceValues } from "@raycast/api";
 
 export interface DiskUsage {
   /** Mount path that was measured. */

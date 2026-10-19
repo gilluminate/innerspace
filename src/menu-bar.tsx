@@ -1,6 +1,6 @@
-import { Icon, Keyboard, LaunchType, MenuBarExtra, launchCommand, open, openExtensionPreferences } from "@raycast/api";
+import { Icon, Keyboard, LaunchType, launchCommand, MenuBarExtra, open, openExtensionPreferences } from "@raycast/api";
 import { usePromise } from "@raycast/utils";
-import { STORAGE_SETTINGS_URL, formatBytes, getDiskUsage, getVolumePath } from "./disk";
+import { formatBytes, getDiskUsage, getVolumePath, STORAGE_SETTINGS_URL } from "./disk";
 
 export default function Command() {
   const volumePath = getVolumePath();

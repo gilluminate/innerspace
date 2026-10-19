@@ -1,6 +1,6 @@
-import { Action, ActionPanel, Detail, Icon, Keyboard, openExtensionPreferences, open } from "@raycast/api";
+import { Action, ActionPanel, Detail, Icon, Keyboard, open, openExtensionPreferences } from "@raycast/api";
 import { showFailureToast, usePromise } from "@raycast/utils";
-import { STORAGE_SETTINGS_URL, formatBytes, getDiskUsage, getVolumePath, summarize, DiskUsage } from "./disk";
+import { type DiskUsage, formatBytes, getDiskUsage, getVolumePath, STORAGE_SETTINGS_URL, summarize } from "./disk";
 
 const BAR_CELLS = 30;
 
