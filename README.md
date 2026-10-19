@@ -1,4 +1,4 @@
-# Innerspace
+# InnerSpace
 
 A small Raycast extension that tells you how much disk space you've used, with a percent-used readout in the menu bar.
 
