@@ -1,0 +1,58 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "innerspace",
+  "title": "Innerspace",
+  "description": "See how much disk space you've used, with a percent-used readout in the menu bar.",
+  "icon": "icon.png",
+  "author": "gilluminate",
+  "platforms": [
+    "macOS"
+  ],
+  "categories": [
+    "System"
+  ],
+  "license": "MIT",
+  "preferences": [
+    {
+      "name": "volumePath",
+      "title": "Volume",
+      "description": "Volume to measure. Defaults to the boot volume (/).",
+      "type": "directory",
+      "default": "/",
+      "required": false
+    }
+  ],
+  "commands": [
+    {
+      "name": "disk-space",
+      "title": "Disk Space",
+      "description": "Show how much space is used and available on your disk.",
+      "mode": "view"
+    },
+    {
+      "name": "menu-bar",
+      "title": "Disk Usage in Menu Bar",
+      "description": "Show the percentage of disk space used in the menu bar.",
+      "mode": "menu-bar",
+      "interval": "5m"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^2.8.2",
+    "@raycast/utils": "^2.3.3"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^2.2.0",
+    "@types/node": "22.19.17",
+    "@types/react": "19.0.10",
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.4.0"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint"
+  }
+}
