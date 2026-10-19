@@ -10,7 +10,7 @@ export default function Command() {
 
   return (
     <MenuBarExtra title={title} isLoading={isLoading} tooltip={`Disk space used on ${volumePath}`}>
-      <MenuBarExtra.Section title={volumePath}>
+      <MenuBarExtra.Section title={volumePath === "/" ? undefined : volumePath}>
         {data && (
           <>
             <MenuBarExtra.Item title={`Used: ${formatBytes(data.used)} of ${formatBytes(data.total)}`} />
