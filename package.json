@@ -1,7 +1,7 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "innerspace",
-  "title": "InnerSpace",
+  "title": "Innerspace",
   "description": "See how much disk space you've used, with a percent-used readout in the menu bar.",
   "icon": "icon.png",
   "author": "gilluminate",
